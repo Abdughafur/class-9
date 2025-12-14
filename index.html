@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Abdughafur Projects - Vocabulary Book</title>
+    <link rel="stylesheet" href="files/style.css" />
+  </head>
+
+  <body>
+    <!-- Drawer -->
+    <aside class="drawer" id="drawer" aria-label="Навигатсия">
+      <div class="drawer-inner">
+        <div class="drawer-header">Lessons list - Рӯйхати Дарсҳо</div>
+
+        <nav class="drawer-links" id="drawerLinks">
+          <!-- Lesson links inserted here -->
+          <a
+            class="about-link"
+            href="files/about.html"
+            target="_blank"
+            rel="noopener"
+          >
+            About this project
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleDrawer(false)"></div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <button
+        class="burger"
+        id="burger"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="drawer"
+        aria-expanded="false"
+        onclick="toggleDrawer()"
+      >
+        ☰
+      </button>
+
+      <div class="brand" onclick="showCover()">
+        <div class="brand-badge"></div>
+        <div class="brand-title">Abdughafur Projects</div>
+      </div>
+
+      <!-- removed About button from navbar (as requested) -->
+      <div style="width: 44px; height: 44px"></div>
+    </header>
+
+    <!-- App -->
+    <main class="app">
+      <div class="container" id="mainContent">
+        <section class="cover" id="cover">
+          <h1>Vocabulary for class 9</h1>
+          <div class="by">Created by Abdughafur Projects</div>
+          <div class="meta">English words - Tajik translations</div>
+          <div class="meta">OPEN-SOURSE PROJECT</div>
+        </section>
+
+        <div id="pages"></div>
+      </div>
+    </main>
+
+    <script src="files/app.js"></script>
+  </body>
+</html>
